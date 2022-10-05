@@ -1,0 +1,58 @@
+/* Grid */
+
+body {
+    color: black;
+}
+
+.split {
+    width: 48.5%;
+    height: 100%;
+    position: fixed;
+    margin: 1rem;
+}
+
+.right {
+    right: 0;
+    overflow: scroll;
+    /* border: 1px solid red; */
+}
+
+.left {
+    left: 0;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+}
+
+.logo {
+    font-size: 100px;
+}
+
+
+/* Left Side */
+
+.my-nav {
+    margin: 10rem 0 10rem 0;
+}
+
+
+/* Right Side */
+
+.hero {
+    margin-top: 1rem;
+}
+
+.my-carousel,
+.my-carousel-item {
+    height: 80vh;
+}
+
+.my-carousel-item {
+    background-size: cover;
+}
+
+.menu {
+    margin-top: 1rem;
+    border: 0.5px solid black;
+}

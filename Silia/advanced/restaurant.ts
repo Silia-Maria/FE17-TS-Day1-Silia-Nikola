@@ -55,13 +55,13 @@ const currencyFormater = new Intl.NumberFormat("de-AT", {
     currency: "EUR",
 })
 
-// starters index 0-1
+// print array dishes
 for (let dish of dishes) {
-    let result = `<div class="ms-2">
+    let result = `<div class="m-2">
        <p>${dish.name}</p>
        <p>${dish.definition}</p>
        <p>${currencyFormater.format(dish.price)}</p>
-     </div> <hr>`
+     <hr></div> `
 
      if (dish.type == "starter") {
         let starterRow = <HTMLSelectElement>document.getElementById("starters"); 
@@ -79,11 +79,24 @@ for (let dish of dishes) {
     
     } 
 
-// for (let starter of dishes) {
-     
-//    let starterRow = <HTMLSelectElement>document.getElementById("starters"); 
-//    starterRow.innerHTML += `<div>
-//     <p>${starter.name}</p>
-//     <p>${starter.definition}</p>
-//     <p>${starter.price}</p>
-// </div> <hr>`} 
+// MenuButton with Scroll event
+
+const menuBtn = <HTMLSelectElement>document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+
+   const ScrollMenu = <HTMLSelectElement>document.getElementById("menuScroll");
+   ScrollMenu.scrollIntoView();
+})
+
+//Intro Button
+
+const introBtn =  <HTMLSelectElement>document.getElementById("intro");
+
+introBtn.addEventListener("click", () => {
+
+    const ScrollIntro = <HTMLSelectElement>document.getElementById("introScroll");
+    ScrollIntro.scrollIntoView();
+ })
+
+ // Reservations Button

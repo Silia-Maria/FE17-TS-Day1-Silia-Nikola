@@ -23,7 +23,9 @@
 
 
     <!-- 
+        -------------
         left Side
+        -------------
      -->
 
     <div class="left split">
@@ -34,16 +36,16 @@
             <div class="my-5">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <h3><a class="nav-link text-dark" aria-current="page" href="#">Restaurant <i class="fa-solid fa-arrow-right-long"></i></a></h3>
+                        <h1><a class="nav-link text-dark" aria-current="page" href="#">Restaurant <i class="fa-solid fa-arrow-right-long"></i></a></h1>
                     </li>
                     <li class="nav-item">
-                        <h3><a class="nav-link text-dark" href="#">Shops <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <h1><a class="nav-link text-dark" href="#">Shops <i class="fa-solid fa-arrow-right-long"></i></a>
                     </li>
-                    </h3>
+                    </h1>
                     <li class="nav-item">
-                        <h3><a class="nav-link text-dark" href="#">Events <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <h1><a class="nav-link text-dark" href="#">Events <i class="fa-solid fa-arrow-right-long"></i></a>
                     </li>
-                    </h3>
+                    </h1>
                 </ul>
             </div>
         </div>
@@ -52,14 +54,23 @@
         <h1 class="text-end m-2 logo">Food</h1>
     </div>
 
+    <!--End Left side-->
+
     <!--
+        -------------
         right side 
+        -------------
     -->
 
     <div class="right split">
 
+        <!-- Navigation buttons -->
+        <button id="intro" type="button" class="btn btn-light me-2 border border-1">Intro</button>
+        <button id="menu" type="button" class="btn btn-light me-2 border border-1">Menu</button>
+        <button id="reservation" type="button" class="btn btn-light border border-1">Reservation</button>
 
-        <!-- Pictures -->
+
+        <!-- Carousel -->
         <div class="hero">
             <div id="carouselExampleFade" class="my-carousel carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner" data-interval="100">
@@ -76,28 +87,57 @@
             </div>
         </div>
 
+        <!-- End Carousel -->
 
-        <div class="menu">
-            <h3>Menu</h3>
+        <!-- Intro -->
+
+        <div id="introScroll" class="p-4 mt-2 section">
+            <h5>Home-made Tapas <br> with local & sesonal products only </h5>
+            <p>We get our products from small local farms who we know personally. Sustainability is very important to us, thats why we create new dishes almost daily to not waste any product. Because we only use seasonal products the whole menu changes with
+                the Season.</p>
+
+        </div>
+
+        <!-- Menu -->
+        <div class="p-2 section">
+            <h3 id="menuScroll" class="menuHeading">MENU</h3>
 
             <div id="starters">
-                <h4>Starters</h4>
+                <h5 class="sectionHeading">Starters</h5>
             </div>
 
             <div id="veggie">
-                <h4>Veggie Lover</h4>
+                <h5 class="sectionHeading">Veggie Lover</h5>
             </div>
 
             <div id="meat">
-                <h4>Meat Lover</h4>
+                <h5 class="sectionHeading">Meat Lover</h5>
             </div>
 
             <div id="dessert">
-                <h4>Sweets</h4>
+                <h5 class="sectionHeading">Sweets</h5>
             </div>
         </div>
 
+        <!-- End Menu -->
+
+        <!-- Text -->
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Food</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Beverage</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+        </div>
+
     </div>
+
+    <!-- End right side-->
 
 
 
